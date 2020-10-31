@@ -1,0 +1,8 @@
+{
+    "name": "portfolio_website_mk2",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Josh",
+    "contributors": [],
+    "dependencies": {}
+}
