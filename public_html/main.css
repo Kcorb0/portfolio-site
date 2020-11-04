@@ -50,6 +50,7 @@ body {
     display: inline-block;
     box-sizing: inherit;
     z-index: 2;
+    transition: all 1s;
 }
 
 .button:hover {
@@ -71,6 +72,7 @@ nav {
     z-index: 999;
     bottom: 0;
     border-bottom: 4px solid #DF3F3F;
+    
 }
 
 .sticky {
@@ -128,6 +130,23 @@ a {
 
 .nav-burger {
     display: none;
+}
+
+#mob-links {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 200px;
+}
+
+.burg-link {
+    padding: 8px 16px;
+    display: block;
+}
+
+.burg-other {
+    padding: 8px 16px;
+    display: block;
 }
 
 .hz {
@@ -318,10 +337,23 @@ a {
     top: -250px;
 }
 
+.spacing {
+    height: 50px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 48vw solid transparent;
+    border-right: 48vw solid transparent;
+    border-top: 50px solid #EfEfEf;
+}
+
 #contact {
     margin-top: 20px;
     position: relative;
     text-align: center;
+    background-color: #2a2840;
 }
 
 .contact-wrap {
@@ -336,6 +368,7 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto; 
+    color: white;
 }
 
 .inputs {
@@ -358,6 +391,7 @@ a {
     border-bottom: 2px solid #182A35;
     resize: none;
     font-size: 18px;
+    transition: all 0.5s;
 }
 
 .inp:focus {
@@ -368,28 +402,71 @@ a {
     transition-duration: 1s;
     
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #EfEfEf inset !important;
+    -webkit-text-fill-color: #182A35 !important;
+}
+
 .send-btn {
-    width: 200px;
-    margin-bottom: 20px;
+    border: 2px solid #182A35;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 20px;
+    box-sizing: inherit;
+    z-index: 2;
+    transition: all 0.5s;
+    margin-bottom: 40px;
+    width: 100px;
+    outline: none;
+    font-size: 18px;
+}
+
+.send-btn:hover {
+    transition-property: border-radius;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+}
+
+.send-btn:active {
+    width: 90px;
+    transition-property: width;
+    transition-duration: 0.1s;
+    transition-delay: 0s;
 }
 
 .sh {
     margin-bottom: 20px;
 }
 
+
 footer {
-    height: 100px;
-    background-color: #979f9e;
+    height: 50px;
+    background-color: #DF3F3F;
 }
+
+
+.footer-text {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
 
 
 @media only screen and (max-width: 1550px) {
     .skill-bar {
         width: 80%;
+        transition: all 1s;
     }
     
     .label {
         width: 20%;
+        transition: all 1s;
     }
     
 }
@@ -398,9 +475,11 @@ footer {
     .about-row {
         display: flex;
         flex-direction: column;
+        transition: all 1s;
     }
     .project-block {
         width: 100%;
+        transition: all 1s;
     }
 }
 
@@ -408,10 +487,12 @@ footer {
     
     .nav-other {
         display: none;
+        transition: all 1s;
     }
     
     .nav-link {
         display: none;
+        transition: all 1s;
     }
     
     .nav-burger {
@@ -421,7 +502,8 @@ footer {
         height: 80px;
         text-align: right;
         width: 100%;
-        margin-top: 40px
+        margin-top: 40px;
+        transition: all 1s;
     }
     
     .fa-bars {
@@ -444,22 +526,27 @@ footer {
     
     .skill-bar {
         width: 70%;
+        transition: all 1s;
     }
     
     .label {
         width: 30%;
+        transition: all 1s;
     }
     
     .about-row, .contact-wrap, about-text {
         width: 90%;
+        transition: all 1s;
     }
     
     .bars-container {
         width: 80%;
+        transition: all 1s;
     }
     
     .projects-wrap {
         width: 100%;
+        transition: all 1s;
     }
     
 }
@@ -468,55 +555,67 @@ footer {
     .home-text {
         font-size: 30px;
         text-align: center;
+        transition: all 1s;
     }
     
     .block-row2 {
         margin-top: 10px;
         margin-bottom: 40px;
+        transition: all 1s;
     }
     
     .nav-other {
         display: none;
+        transition: all 1s;
     }
     
     .nav-link {
         display: none;
+        transition: all 1s;
     }
     
     
     .skill-bar {
         width: 70%;
+        transition: all 1s;
     }
     
     .label {
         width: 30%;
         font-size: 18px;   
+        transition: all 1s;
     }
     
     .about-row {
         width: 95%;
+        transition: all 1s;
     }
     
     .bars-container {
         width: 90%;
+        transition: all 1s;
     }
     
     .about-text {
         width: 95%;
+        transition: all 1s;
     }
     
     .contact-wrap {
         width: 100%;
         flex-direction: column;
+        transition: all 1s;
     }
     
     .message {
         width: 90%;
+        transition: all 1s;
     }
     
 
     .input-areas {
        width: 80%;
+       transition: all 1s;
     }
 }
 

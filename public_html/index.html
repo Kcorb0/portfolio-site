@@ -15,6 +15,7 @@
         <link href="icons/css/fontawesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="icons/css/solid.min.css" rel="stylesheet" type="text/css"/>
         <script src="https://kit.fontawesome.com/becaa77bf6.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="assets/Logo.png">
     </head>
 
     <body>
@@ -38,8 +39,18 @@
                     <div class="nav-other"><a href="https://www.linkedin.com/in/josh-blackmore-69aa34174/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
                     <div class="nav-other"><a href="https://github.com/Kcorb0" target="_blank"><i class="fab fa-github"></i></a></div>
                     
-                    <a class="nav-burger" onclick="burgerFunction()"><i class="fas fa-bars"></i></a>
+                    <a href="javascript:void(0);" class="nav-burger" onclick="burgerFunction()"><i class="fas fa-bars"></i></a>
                 </div>
+                <div id="mob-links">
+                <div class="burg-link"><a href="#home">HOME</a></div>
+                <div class="burg-link"><a href="#about">ABOUT</a></div>
+                <div class="burg-link"><a href="#projects">PROJECTS</a></div>
+                <div class="burg-link"><a href="#contact">CONTACT ME</a></div>
+                <div class="burg-link"><a href="JoshBlackmore_CV2020.pdf" target="_blank">RESUME</a></div>
+                <div class="burg-other"><a href="https://twitter.com/JoshBLK01" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                <div class="burg-other"><a href="https://www.linkedin.com/in/josh-blackmore-69aa34174/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+                <div class="burg-other"><a href="https://github.com/Kcorb0" target="_blank"><i class="fab fa-github"></i></a></div>
+            </div>
             </nav>
         </section>
         
@@ -51,7 +62,9 @@
 
             function myFunction() {
               if (window.pageYOffset >= sticky) {
+                navbar.style.top = null;
                 navbar.classList.add("sticky")
+                
               } else {
                 navbar.classList.remove("sticky");
               }
@@ -60,11 +73,17 @@
         
         <script>
             function burgerFunction() {
-                var x = document.getElementById("myLinks");
+                var x = document.getElementById("mob-links");
+                var nav = document.getElementById("navbar");
+                
                 if (x.style.display === "block") {
                   x.style.display = "none";
+                  nav.style.height = "50px";
+                  nav.style.top = null;
                 } else {
                   x.style.display = "block";
+                  nav.style.height = "400px";
+                  nav.style.top = "100vh";
                 }
               }
         </script>
@@ -247,15 +266,17 @@
                     </div>
                 </div>
             </div>
+            <div class="spacing"></div>
         </section>
         
         <section id="contact" class="flex">
-            <h2 class='sec_header'>CONTACT ME</h2>
-            <div class="hz"></div>
+            <div class="triangle"></div>
+            <h2 class='sec_header' style="color: #EfEfEf;">CONTACT ME</h2>
+            <div class="hz" style="border-color: #EfEfEf"></div>
             <div class='contact-wrap'>
 
                 <div class='message'>
-                    <p>Thank you for visiting my portfolio.
+                    <p style="color: #EfEfEf;">Thank you for visiting my portfolio.
                        Please feel free to send me a message via the following form,
                        the message will be with me instantly and I can back to you right away.
                     </p>
@@ -264,9 +285,9 @@
                 <div class='inputs'>
                     <div class='input-areas'>
                         <input type="text" class="inp" name="fname" placeholder='Name...'>
-                        <input type="text" class="inp" name="fname" placeholder='Email...'>
-                        <input type="text" class="inp" name="fname" placeholder='Subject...'>
-                        <textarea class="inp" name="fname" placeholder='Your message...' style='height: 100px;'></textarea>
+                        <input type="email" class="inp" name="femail" placeholder='Email...'>
+                        <input type="text" class="inp" name="fsubject" placeholder='Subject...'>
+                        <textarea class="inp" name="fmessage" placeholder='Your message...' style='height: 100px;'></textarea>
                     </div>
                 </div>
             </div>
@@ -275,6 +296,7 @@
         
         <footer>
             
+            <div class="footer-text">JOSH BLACKMORE | <span style="color: #EfEfEf;"> ©2020</span></div>
         </footer>
         
     </body>
