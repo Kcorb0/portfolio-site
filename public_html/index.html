@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Portolio-mk2</title>
+        <title>joshuablackmore.me</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="main.css" rel="stylesheet" type="text/css"/>
@@ -21,41 +21,30 @@
     <body>
         <section id="home" class="flex">
             <div class="home-text">
-                Hi, I'm <span class="highlight" style="text-shadow: 2px 2px black;">Josh Blackmore</span>.
+                Hi, I'm <span class="highlight" style="text-shadow: 2px 2px black;">JOSH BLACKMORE</span>.
                 <br>
-                A Software <span class="highlight" style="text-shadow: 2px 2px black;">Developer</span>.
+                A Software <span class="highlight" style="text-shadow: 2px 2px black;">DEVELOPER</span>.
             </div>
             
             <a href='#about'><div class="button">Proceed Onward</div></a>
             
             <nav class="flex" id='navbar'>
                 <div class="links">
+                    <a href="javascript:void(0);" class="nav-burger" onclick="burgerFunction()"><i class="fas fa-bars"></i></a>
                     <div class="nav-link"><a href="#home">HOME</a></div>
                     <div class="nav-link"><a href="#about">ABOUT</a></div>
                     <div class="nav-link"><a href="#projects">PROJECTS</a></div>
                     <div class="nav-link"><a href="#contact">CONTACT ME</a></div>
-                    <div class="nav-link"><a href="JoshBlackmore_CV2020.pdf" target="_blank">RESUME</a></div>
+                    <div class="nav-link"><a href="JoshBlackmoreCV2021.pdf" target="_blank">RESUME</a></div>
                     <div class="nav-other"><a href="https://twitter.com/JoshBLK01" target="_blank"><i class="fab fa-twitter"></i></a></div>
                     <div class="nav-other"><a href="https://www.linkedin.com/in/josh-blackmore-69aa34174/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
                     <div class="nav-other"><a href="https://github.com/Kcorb0" target="_blank"><i class="fab fa-github"></i></a></div>
-                    
-                    <a href="javascript:void(0);" class="nav-burger" onclick="burgerFunction()"><i class="fas fa-bars"></i></a>
                 </div>
-                <div id="mob-links">
-                <div class="burg-link"><a href="#home">HOME</a></div>
-                <div class="burg-link"><a href="#about">ABOUT</a></div>
-                <div class="burg-link"><a href="#projects">PROJECTS</a></div>
-                <div class="burg-link"><a href="#contact">CONTACT ME</a></div>
-                <div class="burg-link"><a href="JoshBlackmore_CV2020.pdf" target="_blank">RESUME</a></div>
-                <div class="burg-other"><a href="https://twitter.com/JoshBLK01" target="_blank"><i class="fab fa-twitter"></i></a></div>
-                <div class="burg-other"><a href="https://www.linkedin.com/in/josh-blackmore-69aa34174/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-                <div class="burg-other"><a href="https://github.com/Kcorb0" target="_blank"><i class="fab fa-github"></i></a></div>
-            </div>
             </nav>
         </section>
         
         <script>
-            window.onscroll = function() {myFunction()};
+            window.onscroll = function() {myFunction();};
 
             var navbar = document.getElementById("navbar");
             var sticky = navbar.offsetTop;
@@ -63,7 +52,7 @@
             function myFunction() {
               if (window.pageYOffset >= sticky) {
                 navbar.style.top = null;
-                navbar.classList.add("sticky")
+                navbar.classList.add("sticky");
                 
               } else {
                 navbar.classList.remove("sticky");
@@ -182,9 +171,9 @@
 
             <div class='projects-wrap'>
                 <div class='project-block'>
-                    <span class='cover-block img1'></span>
+                    <span class='cover-block' style='background-image: url(assets/miku-banner.jpg); background-position-y: -100px;'></span>
                     <div class='block-content'>
-                        <h2 class='block-header'>Book Journal</h2>
+                        <h2 class='block-header'>Discord Bot - Miku</h2>
                         <p>
                             A description of the current block, anoanfgagawg gasog wd apg jaop.
                         </p>
@@ -192,9 +181,9 @@
                 </div>
                 
                 <div class='project-block'>
-                    <span class='cover-block img2'></span>
+                    <span class='cover-block' style='background-image: url(assets/ATOM-BANNER.jpg); background-size: contain;'></span>
                     <div class='block-content'>
-                        <h2 class='block-header'>Meteorite Study - Linear Regression</h2>
+                        <h2 class='block-header'>Webapp - Atom Habit Tracker</h2>
                         <p>
                             A description of the current block, anoanfgagawg gasog wd apg jaop.
                         </p>

@@ -30,12 +30,13 @@ body {
     height: calc(100vh + 54px);
     position: relative;
     z-index: 3;
-    background-color: #979f9e;
+    background-color: #191a21;
 }
 
 .home-text {
     font-size: 50px;
     text-align: center;
+    color: #EfEfEf;
 }
 
 .highlight {
@@ -43,22 +44,23 @@ body {
 }
 
 .button {
-    border: 2px solid #182A35;
+    background-color: #DF3F3F;
+    color: #EfEfEf;
     cursor: pointer;
     margin-top: 10px;
     padding: 10px 20px;
     display: inline-block;
     box-sizing: inherit;
     z-index: 2;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .button:hover {
     transition-property: border-radius, background-color, color;
-    border-radius: 50px;
+    border-radius: 10px;
     background-color: #DF3F3F;
     color: #EfEfEf;
-    transition-duration: 1s;
+    transition-duration: .5s;
     transition-delay: 0s;
 }
 
@@ -67,7 +69,6 @@ nav {
     width: 100%;
     height: 50px;
     position: absolute;
-    overflow: hidden;
     display: block;
     z-index: 999;
     bottom: 0;
@@ -282,7 +283,7 @@ a {
 
 .project-block {
     width: 50%;
-    height: 250px;
+    height: 350px;
     display: block;
     overflow: hidden;
     cursor: pointer;
@@ -301,10 +302,6 @@ a {
     transition-duration: .3s;
 }
 
-.img1 {
-    background-image: url(assets/book_journal.jpg);
-    background-position: center;
-}
 
 .img2 {
     background-image: url(assets/meteor_shower_img.jpg);
@@ -321,7 +318,7 @@ a {
 .img4 {
     background-image: url(assets/botbot_img.jpg);
     background-position: center;
-    background-position-y: -200px;
+    background-position-y: -100px;
 }
 
 .block-content {
@@ -334,7 +331,7 @@ a {
 }
 
 .project-block:hover .cover-block {
-    top: -250px;
+    top: -350px;
 }
 
 .spacing {
@@ -486,13 +483,25 @@ footer {
 @media only screen and (max-width: 830px) {
     
     .nav-other {
-        display: none;
-        transition: all 1s;
+        float: right;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .nav-link {
-        display: none;
-        transition: all 1s;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .links {
+        position: absolute;
+        top: 0vh;
+        background-color: #2a2840;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 4px solid #DF3F3F;
     }
     
     .nav-burger {
@@ -502,7 +511,7 @@ footer {
         height: 80px;
         text-align: right;
         width: 100%;
-        margin-top: 40px;
+        margin-top: 10px;
         transition: all 1s;
     }
     
@@ -563,17 +572,6 @@ footer {
         margin-bottom: 40px;
         transition: all 1s;
     }
-    
-    .nav-other {
-        display: none;
-        transition: all 1s;
-    }
-    
-    .nav-link {
-        display: none;
-        transition: all 1s;
-    }
-    
     
     .skill-bar {
         width: 70%;
