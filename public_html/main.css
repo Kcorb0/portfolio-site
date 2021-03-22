@@ -304,13 +304,13 @@ a {
 
 
 .img2 {
-    background-image: url(assets/meteor_shower_img.jpg);
+    background-image: url(assets/meteor_shower.jpg);
     background-position: center;
     background-position-y: -300px;
 }
 
 .img3 {
-    background-image: url(assets/newsroom-hero-image-password-security.jpg);
+    background-image: url(assets/lock_banner.jpg);
     background-position: center;
     
 }
@@ -442,15 +442,15 @@ input:-webkit-autofill:active  {
 
 
 footer {
-    height: 50px;
     background-color: #DF3F3F;
+    padding-bottom: 5px;
 }
 
 
 .footer-text {
     width: 100%;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 
 
